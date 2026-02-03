@@ -1,7 +1,7 @@
 # Day 02 – Linux Basics & Internals
 
-**#90DaysOfDevOps | TrainWithShubham**
-
+Content and Guidance credits to: **#90DaysOfDevOps with TrainWithShubham**
+Important Links: 
 
 ---
 

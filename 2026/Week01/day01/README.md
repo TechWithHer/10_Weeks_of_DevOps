@@ -1,7 +1,7 @@
 # Day 01 – Introduction to DevOps & Cloud
 
 Content and Guidance credits to: **#90DaysOfDevOps with TrainWithShubham**
-DevOps 2026 RoadMap: DevOps Roadmap
+Important Links: 
 
 ## Objective
 
@@ -15,7 +15,7 @@ Set a strong foundation for your DevOps journey by building **clarity, intent, a
 
 * Fork the `90DaysOfDevOps` repository to your GitHub account
 * Navigate to:
-  `2026/day-01/`
+  `2026/day01/`
 * Create a file named:
   **`learning-plan.md`**
 
@@ -108,11 +108,6 @@ Post **2–3 lines** about:
 
 * Why you’re starting #90DaysOfDevOps
 * One clear goal from your learning plan
-
-Optional:
-
-* Screenshot of your markdown file
-* A professional photo
 ---
 
 ## Why Day 01 Matters
@@ -128,13 +123,6 @@ This plan becomes your **personal execution contract** for the next 90 days.
 
 ---
 
-### ✅ Day 01 Outcome Checklist
-
-* [ ] Repo forked
-* [ ] `learning-plan.md` created
-* [ ] Goals clearly defined
-* [ ] Commit pushed
-* [ ] LinkedIn post shared
 
 ---
 

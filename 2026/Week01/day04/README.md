@@ -1,6 +1,7 @@
 # Day 04 – Basic Linux Shell Scripting for DevOps Engineers
 
-**#90DaysOfDevOps | TrainWithShubham**
+Content and Guidance credits to: **#90DaysOfDevOps with TrainWithShubham**
+Important Links: *#90DaysOfDevOps | TrainWithShubham**
 
 ## Objective
 
