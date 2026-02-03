@@ -1,39 +1,14 @@
-# Week0_Day01
+# Week01_Day01 - Setting Up
 
 ---
 
-## Section A – Tasks / Exercises (Action-Oriented Work)
+## Section A – Action-Oriented Work
 
 ### 🔹 1 – Introduction to DevOps & Cloud
 
 **Repository Setup**
 
-* Fork the `90DaysOfDevOps` repository
-* Navigate to: `2026/day01/`
-* Create a file: `learning-plan.md`
-
-**Create Your 90-Day DevOps Learning Plan**
-Your plan must include:
-
-* Current level (student / fresher / working professional / non-IT, etc.)
-* Why DevOps & Cloud
-* Where you want to reach in 90 days (clear outcome)
-* 3 concrete goals (e.g., CI/CD pipeline, Kubernetes deployment, Terraform infra)
-* 3 core DevOps skills to build
-* Weekly time commitment (weekdays + weekends)
-* Consistency strategy (tracking, fixed slot, accountability)
-
-**Rules**
-
-* Keep under 1 page
-* Be realistic and execution-focused
-
-**Commit Work**
-
-* Add `learning-plan.md`
-* Commit message: `Day 01: Added 90-day DevOps learning plan`
-* Push to forked repo
-
+* Fork this repository and execute your tasks
 ---
 
 ### 🔹 2 – Linux Basics & Internals
@@ -61,13 +36,6 @@ Create notes explaining:
 
 * Practiced Linux commands
 * `linux-architecture-notes.md` OR handwritten notes
-
-**Submission**
-
-* Navigate to `2026/day-02/`
-* Add `linux-architecture-notes.md`
-* Add `Linux_commands.md`
-* Commit and push
 
 ---
 
@@ -163,14 +131,16 @@ Create notes explaining:
 
 ## Section D – Resources
 
-* `90DaysOfDevOps` GitHub Repository
+* `90DaysOfDevOps` GitHub Repository by TrainWithShubham
 * TrainWithShubham YouTube & LinkedIn content
 * Linux man pages (`man ls`, `man chmod`, etc.)
 * Linux Journey (conceptual learning)
 * OverTheWire (Linux practice – Bandit)
+* https://laptrinhmoingay.com/2020/01/30/linux-architecture-overview/ 
 * Official Docs:
   * Linux Kernel Docs
   * systemd documentation
+
 
 ---
 
