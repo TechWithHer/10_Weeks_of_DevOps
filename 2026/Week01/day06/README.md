@@ -1,187 +1,167 @@
-### 1. Linux File Permissions – Core Concept
+ # Day 8 Task: Shell Scripting Challenge
 
-* Every file/directory has **three permission types**:
+### Task 1: Comments
+In bash scripts, comments are used to add explanatory notes or disable certain lines of code. Your task is to create a bash script with comments explaining what the script does.
 
-  * **Read (r)** – view content
-  * **Write (w)** – modify content
-  * **Execute (x)** – run file / access directory
-* Permissions apply to **three categories**:
+### Task 2: Echo
+The echo command is used to display messages on the terminal. Your task is to create a bash script that uses echo to print a message of your choice.
 
-  * **Owner** – creator of the file
-  * **Group** – group assigned to the file
-  * **Others** – everyone else on the system
-* Permission format:
+### Task 3: Variables
+Variables in bash are used to store data and can be referenced by their name. Your task is to create a bash script that declares variables and assigns values to them.
 
-  ```
-  -rwxr-xr--
-  ```
+### Task 4: Using Variables
+Now that you have declared variables, let's use them to perform a simple task. Create a bash script that takes two variables (numbers) as input and prints their sum using those variables.
 
-### 2. Ownership & Permission Commands
+### Task 5: Using Built-in Variables
+Bash provides several built-in variables that hold useful information. Your task is to create a bash script that utilizes at least three different built-in variables to display relevant information.
 
-* `ls -ltr` → view permissions, owner, group
-* `chmod` → change permissions
-* `chown` → change owner
-* `chgrp` → change group
+### Task 6: Wildcards
+Wildcards are special characters used to perform pattern matching when working with files. Your task is to create a bash script that utilizes wildcards to list all the files with a specific extension in a directory.
 
-### 3. Access Control Lists (ACL)
+## Submission Instructions:
+- Create a single bash script that completes all the tasks mentioned above.
+- Add comments at appropriate places to explain what each part of the script does.
+- Ensure that your script is well-documented and easy to understand.
+- To submit your entry, create a GitHub repository and commit your script to it.
 
-* ACL allows **fine-grained permissions** beyond owner/group/others
-* Useful when:
+**Good luck with Day 8 of the Bash Scripting Challenge! Tomorrow, the difficulty will increase as we move on to more advanced concepts. Happy scripting!**
 
-  * Multiple users need different permissions
-  * You don’t want to change ownership or groups
-* Commands:
+[← Previous Day](../day07/README.md) | [Next Day →](../day09/README.md)
 
-  * `getfacl` → view ACL
-  * `setfacl` → set ACL
+# Day 9 Task: Shell Scripting Challenge Directory Backup with Rotation
 
-### 4. Special Permissions
 
-* **Sticky Bit** → protects files in shared directories
-* **SUID** → run program with owner’s privileges
-* **SGID** → inherit group ownership
+## Challenge Description
 
-### 5. Backup & Restore Permissions
+Your task is to create a bash script that takes a directory path as a command-line argument and performs a backup of the directory. The script should create timestamped backup folders and copy all the files from the specified directory into the backup folder.
 
-* Permissions can be **backed up and restored**
-* Important during migrations, audits, or recovery
+Additionally, the script should implement a rotation mechanism to keep only the last 3 backups. This means that if there are more than 3 backup folders, the oldest backup folders should be removed to ensure only the most recent backups are retained.
 
----
+> The script will create a timestamped backup folder inside the specified directory and copy all the files into it. It will also check for existing backup folders and remove the oldest backups to keep only the last 3 backups.
 
-## 🛠️ **TASKS / EXERCISES (Hands-On Practice)**
+## Example Usage
 
----
+Assume the script is named `backup_with_rotation.sh`. Here's an example of how it will look,
+also assuming the script is executed with the following commands on different dates:
 
-### 🔹 Task 1: Understand Basic Permissions
+1. First Execution (2023-07-30):
 
-```bash
-touch demo.txt
-ls -ltr
+```
+$ ./backup_with_rotation.sh /home/user/documents
 ```
 
-Change permissions and observe:
+Output:
 
-```bash
-chmod 644 demo.txt
-chmod 700 demo.txt
-ls -ltr
+```
+Backup created: /home/user/documents/backup_2023-07-30_12-30-45
+Backup created: /home/user/documents/backup_2023-07-30_15-20-10
+Backup created: /home/user/documents/backup_2023-07-30_18-40-55
 ```
 
----
+After this execution, the /home/user/documents directory will contain the following items:
 
-### 🔹 Task 2: Ownership & Group Changes
-
-```bash
-sudo chown user1 demo.txt
-sudo chgrp devops demo.txt
-ls -ltr
+```
+backup_2023-07-30_12-30-45
+backup_2023-07-30_15-20-10
+backup_2023-07-30_18-40-55
+file1.txt
+file2.txt
+...
 ```
 
----
+2. Second Execution (2023-08-01):
 
-### 🔹 Task 3: Write an Article
-
-📌 Topic:
-
-> Linux File Permissions & Ownership
-> Include:
-
-* rwx explanation
-* chmod (symbolic & numeric)
-* chown / chgrp
-* real-world DevOps use cases
-
----
-
-### 🔹 Task 4: Access Control Lists (ACL)
-
-```bash
-mkdir acl_test
-touch acl_test/file.txt
+```
+$ ./backup_with_rotation.sh /home/user/documents
 ```
 
-Set ACL:
+Output:
 
-```bash
-setfacl -m u:user2:r acl_test/file.txt
-setfacl -m g:devops:rw acl_test/file.txt
+```
+Backup created: /home/user/documents/backup_2023-08-01_09-15-30
 ```
 
-Verify:
+After this execution, the /home/user/documents directory will contain the following items:
 
-```bash
-getfacl acl_test/file.txt
+```
+backup_2023-07-30_15-20-10
+backup_2023-07-30_18-40-55
+backup_2023-08-01_09-15-30
+file1.txt
+file2.txt
+...
 ```
 
----
+In this example, the script creates backup folders with timestamped names and retains only the last 3 backups while removing the older backups.
 
-### 🔹 Task 5: Script – Change Permissions in Bulk
+## Submission Instructions
 
-```bash
-#!/bin/bash
-read -p "Enter directory: " dir
-read -p "Enter permission (e.g. 755): " perm
+Create a bash script named backup_with_rotation.sh that implements the Directory Backup with Rotation as described in the challenge.
 
-chmod -R $perm $dir
-```
+Happy Learning
 
----
+[← Previous Day](../day08/README.md) | [Next Day →](../day10/README.md)
 
-### 🔹 Task 6: Script – Set ACL Using User Input
 
-```bash
-#!/bin/bash
-read -p "Enter file name: " file
-read -p "Enter username: " user
-read -p "Enter permission (r/w/rw): " perm
+Add comments in the script to explain the purpose and logic of each part.
 
-setfacl -m u:$user:$perm $file
-getfacl $file
-```
+Submit your entry by pushing the script to your GitHub repository.
 
----
+Congratulations on completing Day 2 of the Bash Scripting Challenge! The challenge focuses on creating a backup script with rotation capabilities to manage multiple backups efficiently. Happy scripting and backing up!
 
-### 🔹 Task 7: Sticky Bit, SUID, SGID Examples
 
-**Sticky Bit**
+# Day 10 Task: Log Analyzer and Report Generator
 
-```bash
-mkdir shared
-chmod 1777 shared
-```
+## Challenge Title: Log Analyzer and Report Generator
 
-**SUID**
+## Scenario
 
-```bash
-chmod u+s /usr/bin/passwd
-```
+You are a system administrator responsible for managing a network of servers. Every day, a log file is generated on each server containing important system events and error messages. As part of your daily tasks, you need to analyze these log files, identify specific events, and generate a summary report.
 
-**SGID**
+## Task
 
-```bash
-mkdir project
-chmod g+s project
-```
+Write a Bash script that automates the process of analyzing log files and generating a daily summary report. The script should perform the following steps:
 
-📌 Explain:
+1. **Input:** The script should take the path to the log file as a command-line argument.
 
-* Why they exist
-* Where they are used in real systems
+2. **Error Count:** Analyze the log file and count the number of error messages. An error message can be identified by a specific keyword (e.g., "ERROR" or "Failed"). Print the total error count.
 
----
+3. **Critical Events:** Search for lines containing the keyword "CRITICAL" and print those lines along with the line number.
 
-### 🔹 Task 8: Backup & Restore Permissions
+4. **Top Error Messages:** Identify the top 5 most common error messages and display them along with their occurrence count.
 
-**Backup**
+5. **Summary Report:** Generate a summary report in a separate text file. The report should include:
+   - Date of analysis
+   - Log file name
+   - Total lines processed
+   - Total error count
+   - Top 5 error messages with their occurrence count
+   - List of critical events with line numbers
 
-```bash
-getfacl -R mydir > perms.backup
-```
+6. **Optional Enhancement:** Add a feature to automatically archive or move processed log files to a designated directory after analysis.
 
-**Restore**
+## Tips
 
-```bash
-setfacl --restore=perms.backup
-```
+- Use `grep`, `awk`, and other command-line tools to process the log file.
+- Utilize arrays or associative arrays to keep track of error messages and their counts.
+- Use appropriate error handling to handle cases where the log file doesn't exist or other issues arise.
 
----
+## Sample Log File
+
+A sample log file named `sample_log.log` has been provided in the same directory as this challenge file. You can use this file to test your script or use [this](https://github.com/logpai/loghub/blob/master/Zookeeper/Zookeeper_2k.log)
+
+## How to Participate
+
+1. Clone this repository or download the challenge file from the provided link.
+2. Write your Bash script to complete the log analyzer and report generator task.
+3. Use the provided `sample_log.log` or create your own log files for testing.
+4. Test your script with various log files and scenarios to ensure accuracy.
+5. Submit your completed script by the end of Day 10 of the 90-day DevOps challenge.
+
+## Submission
+
+Submit your completed script by [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) or sending the script file to the challenge organizer.
+
+Good luck and happy scripting!
+
+[← Previous Day](../day09/README.md) | [Next Day →](../day11/README.md)
