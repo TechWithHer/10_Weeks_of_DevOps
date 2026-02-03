@@ -1,128 +1,177 @@
-# Day 01 – Introduction to DevOps & Cloud
-
-Content and Guidance credits to: **#90DaysOfDevOps with TrainWithShubham**
-Important Links: 
-
-## Objective
-
-Set a strong foundation for your DevOps journey by building **clarity, intent, and discipline**.
+# Week0_Day01
 
 ---
 
-## 🛠️ Part 1: Tasks / Exercises (Action Items)
+## Section A – Tasks / Exercises (Action-Oriented Work)
 
-### 1. Repository Setup
+### 🔹 1 – Introduction to DevOps & Cloud
 
-* Fork the `90DaysOfDevOps` repository to your GitHub account
-* Navigate to:
-  `2026/day01/`
-* Create a file named:
-  **`learning-plan.md`**
+**Repository Setup**
 
----
+* Fork the `90DaysOfDevOps` repository
+* Navigate to: `2026/day01/`
+* Create a file: `learning-plan.md`
 
-### 2. Create Your 90-Day DevOps Learning Plan
-
+**Create Your 90-Day DevOps Learning Plan**
 Your plan must include:
 
-* **Current level**
-  (student / fresher / working professional / non-IT background, etc.)
+* Current level (student / fresher / working professional / non-IT, etc.)
+* Why DevOps & Cloud
+* Where you want to reach in 90 days (clear outcome)
+* 3 concrete goals (e.g., CI/CD pipeline, Kubernetes deployment, Terraform infra)
+* 3 core DevOps skills to build
+* Weekly time commitment (weekdays + weekends)
+* Consistency strategy (tracking, fixed slot, accountability)
 
-* **Why DevOps & Cloud?**
-  (career shift, growth, curiosity, role alignment, etc.)
+**Rules**
 
-* **Where you want to reach in 90 days**
-  (clear outcome, not vague learning)
+* Keep under 1 page
+* Be realistic and execution-focused
 
-* **3 concrete goals**
-  Example:
-
-  * Deploy an application on Kubernetes
-  * Build a CI/CD pipeline using Jenkins/GitHub Actions
-  * Provision infrastructure using Terraform
-
-* **3 core DevOps skills to build**
-  Example:
-
-  * Linux troubleshooting
-  * CI/CD pipelines
-  * Kubernetes debugging
-
-* **Weekly time commitment**
-  Example:
-
-  * Weekdays: 2–2.5 hours/day
-  * Weekends: 4–6 hours/day
-
-* **Consistency strategy**
-  (tracking, fixed time slot, public accountability, etc.)
-
-📌 **Rules**
-
-* Keep it **under 1 page**
-* Be realistic and honest
-* Focus on execution, not perfection
----
-
-### 4. Commit Your Work
+**Commit Work**
 
 * Add `learning-plan.md`
-* Commit with a meaningful message
-  (e.g., `Day 01: Added 90-day DevOps learning plan`)
-* Push to your forked repository
+* Commit message: `Day 01: Added 90-day DevOps learning plan`
+* Push to forked repo
 
 ---
 
-## ✍️ Part 2: Write-ups / Reflections (Thinking Work)
+### 🔹 2 – Linux Basics & Internals
 
-### 1. Written Understanding of DevOps (Short & Clear)
+**Task a: Linux Basic Commands**
 
-Write a brief explanation covering:
+1. Check present working directory
+2. List all files including hidden files
+3. Create nested directories:
 
-#### What is DevOps?
+   ```
+   A/B/C/D/E
+   ```
 
-* Your understanding in simple words
-* Example formal definition (optional):
+**Task b: Linux Architecture & Process Understanding**
+Create notes explaining:
 
-  > *DevOps is the union of people, process, and products to enable continuous delivery of value to end users.*
+* Kernel
+* User space
+* init / systemd
+* Process creation & management
+* Why systemd matters
 
-#### Key Goal of DevOps
+**Expected Output**
 
-* Shortening deployment cycle time
-* Faster, safer delivery of changes
-* Automation-driven reliability
+* Practiced Linux commands
+* `linux-architecture-notes.md` OR handwritten notes
 
-#### What DevOps Involves
+**Submission**
 
-* Automation
-* Scaling
-* Infrastructure
-* Continuous Integration & Delivery
-* Collaboration between Dev & Ops
-
----
-
-### 2. LinkedIn Post (Learn in Public)
-
-Post **2–3 lines** about:
-
-* Why you’re starting #90DaysOfDevOps
-* One clear goal from your learning plan
----
-
-## Why Day 01 Matters
-
-DevOps is not just tools—it’s a mindset:
-
-* Ownership over your growth
-* Discipline without supervision
-* Long-term execution
-* Consistency over motivation
-
-This plan becomes your **personal execution contract** for the next 90 days.
+* Navigate to `2026/day-02/`
+* Add `linux-architecture-notes.md`
+* Add `Linux_commands.md`
+* Commit and push
 
 ---
 
+### 🔹 3. Linux File Operations & Permissions
+
+**File Viewing & History**
+
+1. View file content
+2. View file with line numbers
+3. View command history
+4. Show last 10 commands
+
+**File & Directory Operations**
+5. Remove a directory
+6. Remove a directory with contents
+
+**File Creation & Content Management**
+7. Create `fruits.txt` with given fruit list
+8. View contents
+9. Show top 3 fruits
+10. Show bottom 3 fruits
+11. Show first 3 fruits in reverse order
+12. Sort bottom 3 fruits alphabetically
+
+**Working with Another File**
+13. Create `Colors.txt` with given colors
+14. View contents
+15. Prepend `Yellow` to file
+
+**File Comparison & Analysis**
+16. Show common lines between both files
+17. Show differences
+18. Count lines, words, and characters
+
+**Permissions**
+19. Change permissions so only owner has read, write, execute
 
 ---
 
+## Section B – Write-Ups / Conceptual Understanding
+
+### 🔹 DevOps Fundamentals 
+
+* What is DevOps (simple explanation)
+* Key goals of DevOps
+* What DevOps involves (automation, CI/CD, infra, collaboration)
+
+---
+
+### 🔹 Linux Importance for DevOps 
+
+* Why Linux is critical for cloud, containers, CI/CD
+* How Linux knowledge helps debugging and incident handling
+
+**Linux Architecture (High-Level)**
+
+* Kernel: CPU, memory, disk, networking
+* User Space: applications & shells
+* init/systemd: service management
+
+**Processes & systemd**
+
+* Process states
+* Service startup, restart, dependencies, logging
+
+---
+
+### 🔹 Linux Files & Permissions 
+
+* File viewing methods and their importance
+* Ownership: user, group, others
+* Permissions: read, write, execute
+* Command history benefits
+* Text processing for logs and configs
+
+---
+
+## Section C – Outcomes, Reflections & Learn-in-Public
+
+### Expected Outcomes
+
+* Comfort with Linux commands
+* Understanding Linux internals
+* Confidence with file handling & permissions
+
+### Mindset Reinforced
+
+* Discipline over motivation
+* Ownership of growth
+* Consistency without supervision
+
+---
+
+## Section D – Resources
+
+* `90DaysOfDevOps` GitHub Repository
+* TrainWithShubham YouTube & LinkedIn content
+* Linux man pages (`man ls`, `man chmod`, etc.)
+* Linux Journey (conceptual learning)
+* OverTheWire (Linux practice – Bandit)
+* Official Docs:
+  * Linux Kernel Docs
+  * systemd documentation
+
+---
+
+Content & guidance credits: **#90DaysOfDevOps with TrainWithShubham**

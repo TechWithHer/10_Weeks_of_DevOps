@@ -1,120 +1,184 @@
-# Day 02 – Linux Basics & Internals
+# Day 04 – Basic Linux Shell Scripting for DevOps Engineers
 
 Content and Guidance credits to: **#90DaysOfDevOps with TrainWithShubham**
-Important Links: 
+Important Links: *#90DaysOfDevOps | TrainWithShubham**
+
+## Objective
+
+Understand the **basics of Linux Shell Scripting** and how it is used by DevOps engineers to automate tasks, handle inputs, and make decisions.
 
 ---
 
-## 🛠️ PART 1: TASKS (Exercises / What You Must Do)
+## ✍️ PART 1: WRITEUPS (Conceptual Understanding)
 
-### Task 1: Linux Basic Commands
+### 1. What is a Kernel?
 
-Answer and practice the following:
+The **kernel** is the core component of an operating system.
+It has complete control over system resources such as:
 
-1. **Check your present working directory**
-2. **List all files and directories including hidden files**
-3. **Create a nested directory structure:**
+* CPU
+* Memory
+* Disk
+* Network
+* Hardware devices
 
-   ```
-   A/B/C/D/E
-   ```
-
-📌 Reference:
-Check `Linux_commands.md` in the same `day02` directory.
+The kernel acts as a **bridge between hardware and software**, ensuring programs can run safely and efficiently.
 
 ---
 
-### Task 2: Linux Architecture & Process Understanding
+### 2. What is a Shell?
 
-Create a short note explaining:
+A **shell** is a user-level program that provides an interface to interact with the operating system.
 
-* Core components of Linux:
+* It accepts **human-readable commands**
+* Translates them into instructions the **kernel** understands
+* Executes commands from:
 
-  * Kernel
-  * User space
-  * init / systemd
-* How processes are created and managed
-* What systemd is and why it matters
+  * Keyboard (terminal)
+  * Script files
 
----
+The shell starts when a user logs in or opens a terminal.
 
-### Expected Output
+Examples of shells:
 
-By the end of Day 02, you should have:
-
-* ✅ Practiced basic Linux commands in terminal
-* ✅ A markdown file named:
-
-  ```
-  linux-architecture-notes.md
-  ```
-
-  **OR**
-* ✅ Handwritten notes (recommended)
+* bash
+* sh
+* zsh
+* fish
 
 ---
 
-### Submission Steps
+### 3. What is Linux Shell Scripting?
 
-1. Fork the `90DaysOfDevOps` repository
-2. Navigate to `2026/day-02/`
-3. Add:
+Shell scripting is the practice of writing **scripts (files containing commands)** that are executed by a shell.
 
-   * `linux-architecture-notes.md`
-   * `Linux_commands.md`
-4. Commit and push your changes
+Shell scripts are commonly used to:
 
----
-
-## ✍️ PART 2: WRITE-UPS (Conceptual Understanding)
-
-### Why Linux Matters in DevOps
-
-Linux is the foundation of:
-
-* Cloud VMs
-* Containers
-* Kubernetes nodes
-* CI/CD runners
-
-Understanding Linux internals helps you:
-
-* Debug crashed services
-* Identify CPU/memory bottlenecks
-* Read logs and handle incidents confidently
+* Automate repetitive tasks
+* Manage files and directories
+* Run programs
+* Set up environments
+* Perform system administration
 
 ---
 
-### Linux Architecture (High Level)
+### 4. Shell Scripting for DevOps (In Simple Words)
 
-* **Kernel**
-  Handles CPU, memory, disk, networking, and hardware interaction
-* **User Space**
-  Where applications, shells, and tools run
-* **init / systemd**
-  First process started by the kernel; manages all services
+For DevOps engineers, shell scripting means:
 
----
+* Automating deployments
+* Writing startup scripts
+* Managing servers
+* Handling CI/CD pipeline steps
+* Debugging production issues quickly
 
-### Processes & systemd
+Example use cases:
 
-* Processes have states: running, sleeping, stopped, zombie
-* `systemd` manages:
-
-  * Service startup
-  * Restarts
-  * Dependencies
-  * Logs
-
-This knowledge is critical for production troubleshooting.
+* Restarting failed services
+* Cleaning logs
+* Setting environment variables
+* Automating backups
 
 ---
 
-### Learn in Public (Optional but Recommended)
+### 5. What is `#!/bin/bash`?
 
-Share Day 02 progress on LinkedIn:
+`#!/bin/bash` is called a **shebang**.
 
-* What Linux concept you understood today
-* One command you practiced
+* It tells the system **which interpreter** should execute the script
+* `/bin/bash` specifies the Bash shell
 
+👉 Yes, you **can also use**:
 
+```bash
+#!/bin/sh
+```
+
+But:
+
+* `bash` supports more features
+* `sh` is more minimal and portable
+
+In DevOps, **bash is most commonly used**.
+
+---
+
+## 🛠️ PART 2: TASKS / EXERCISES (Hands-on Practice)
+
+### Task 1: Conceptual
+
+* Explain in your own words what **Shell Scripting means for DevOps**
+* Mention at least **one real DevOps use case**
+
+---
+
+### Task 2: Basic Script
+
+Write a shell script that prints:
+
+```
+I will complete #90DaysOfDevOps challenge
+```
+
+---
+
+### Task 3: User Input & Arguments
+
+Write a shell script that:
+
+* Takes input from the user
+* Takes input from command-line arguments
+* Prints all variables clearly
+
+---
+
+### Task 4: Conditional Logic
+
+Write a shell script using **if-else** to:
+
+* Compare two numbers
+* Print which number is greater (or if they are equal)
+
+---
+
+### Task 5: Reflection
+
+* Was shell scripting difficult?
+* What part was confusing or interesting?
+
+---
+
+### Learn in Public (Recommended)
+
+Share your Day 04 progress on LinkedIn:
+
+* What you learned about shell scripting
+* One script you found interesting
+* Any challenge you faced
+
+**Hashtags**
+
+```
+#90DaysOfDevOps
+#DevOpsKaJosh
+#TrainWithShubham
+```
+
+---
+
+### Resources
+
+* Article: Basic Linux Shell Scripting
+* YouTube: *EASIEST Shell Scripting Tutorial for DevOps Engineers*
+
+---
+
+## ✅ Day 04 Outcome Checklist
+
+* [ ] Understand kernel vs shell
+* [ ] Know what shell scripting is
+* [ ] Can write and run basic shell scripts
+* [ ] Used if-else logic
+* [ ] Shared learning publicly
+
+---
