@@ -15,7 +15,7 @@
 2. List all files including hidden files
 3. Create nested directories:
    ```
-   Dir_1/Dir_2/Dir_3\Dir4
+   Dir_1/Dir_2/Dir_3/Dir4
    ```
 **Task b: Linux Architecture & Process Understanding**
 Create notes explaining:
