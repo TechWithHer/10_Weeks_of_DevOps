@@ -79,21 +79,8 @@ ls -ltr
 
 ---
 
-### 🔹 Task 3: Write an Article
 
-📌 Topic:
-
-> Linux File Permissions & Ownership
-> Include:
-
-* rwx explanation
-* chmod (symbolic & numeric)
-* chown / chgrp
-* real-world DevOps use cases
-
----
-
-### 🔹 Task 4: Access Control Lists (ACL)
+### 🔹 Task 3: Access Control Lists (ACL)
 
 ```bash
 mkdir acl_test
@@ -115,7 +102,7 @@ getfacl acl_test/file.txt
 
 ---
 
-### 🔹 Task 5: Script – Change Permissions in Bulk
+### 🔹 Task 4: Script – Change Permissions in Bulk
 
 ```bash
 #!/bin/bash
