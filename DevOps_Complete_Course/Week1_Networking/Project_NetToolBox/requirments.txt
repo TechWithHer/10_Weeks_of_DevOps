@@ -1,0 +1,12 @@
+# Networking
+dnspython
+requests
+
+# Security
+cryptography
+
+# Cloud
+boto3
+
+# CLI / Web
+flask
