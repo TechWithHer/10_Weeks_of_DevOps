@@ -1,11 +1,8 @@
-# Day 04 – Basic Linux Shell Scripting for DevOps Engineers
-
-Content and Guidance credits to: **#90DaysOfDevOps with TrainWithShubham**
-Important Links: *#90DaysOfDevOps | TrainWithShubham**
+# Day 02 – Basic Linux Shell Scripting for DevOps Engineers
 
 ## Objective
 
-Understand the **basics of Linux Shell Scripting** and how it is used by DevOps engineers to automate tasks, handle inputs, and make decisions.
+Understand the **basics and advance of Linux Shell Scripting** and how it is used by DevOps engineers to automate tasks, handle inputs, and make decisions.
 
 ---
 
@@ -374,14 +371,5 @@ Post your progress on **LinkedIn**:
 Writing an article is **highly encouraged**.
 
 ---
-
-## ✅ Day 05 Outcome Checklist
-
-* [ ] Automated directory creation
-* [ ] Understood scripting with arguments
-* [ ] Learned backup fundamentals
-* [ ] Introduced to cron scheduling
-* [ ] Created and verified Linux users
-
----
+Content and Guidance credits to: **#90DaysOfDevOps with TrainWithShubham**
 
