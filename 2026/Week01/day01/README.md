@@ -1,5 +1,4 @@
 # Week01_Day01 - Setting Up
-
 ---
 
 ## Section A – Action-Oriented Work
@@ -7,22 +6,17 @@
 ### 🔹 1 – Introduction to DevOps & Cloud
 
 **Repository Setup**
-
 * Fork this repository and execute your tasks
 ---
-
 ### 🔹 2 – Linux Basics & Internals
 
 **Task a: Linux Basic Commands**
-
 1. Check present working directory
 2. List all files including hidden files
 3. Create nested directories:
-
    ```
-   A/B/C/D/E
+   Dir_1/Dir_2/Dir_3\Dir4
    ```
-
 **Task b: Linux Architecture & Process Understanding**
 Create notes explaining:
 
@@ -131,7 +125,6 @@ Create notes explaining:
 
 ## Section D – Resources
 
-* `90DaysOfDevOps` GitHub Repository by TrainWithShubham
 * TrainWithShubham YouTube & LinkedIn content
 * Linux man pages (`man ls`, `man chmod`, etc.)
 * Linux Journey (conceptual learning)
