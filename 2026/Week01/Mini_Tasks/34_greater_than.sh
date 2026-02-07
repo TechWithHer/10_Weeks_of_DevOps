@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 echo "Which is greater"
 
 read -p "Enter A" a

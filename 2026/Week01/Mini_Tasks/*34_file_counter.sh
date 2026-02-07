@@ -7,6 +7,4 @@ read dir
 
 file_count=$(find "$dir" -type f| wc -l )
 
-echo "Number of files are $file_count"
-
- 
+echo "Number of files are $file_count" 

@@ -23,3 +23,5 @@ else
 	echo "filename  $filename, does NOT exist"
 
 fi 
+
+# '-f' FILE test operator checks for the existence of a file.

@@ -5,6 +5,6 @@
 for ((  ; ;  ))
 do 
 	echo "Hi Buddy"
-	sleep 2s
+	sleep 2
 done
 

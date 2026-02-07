@@ -10,7 +10,9 @@ case $OPTION in
 	A)
 		echo "Today's date is:"
 		date;;
-	B)ls;;
-        *)echo "Please provide valid value"
-
+	B) 
+		echo "List of scripts in current directory are:" 
+		ls;;
 esac
+
+echo "Please provide valid value"

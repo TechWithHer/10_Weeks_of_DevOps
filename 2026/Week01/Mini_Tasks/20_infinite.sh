@@ -5,6 +5,6 @@
 while true
 do 
 	echo "Hi Buddy"
-	sleep 2s
+	sleep 5
 done
 

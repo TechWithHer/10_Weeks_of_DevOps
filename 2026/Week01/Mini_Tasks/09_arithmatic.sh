@@ -1,12 +1,8 @@
 #!/bin/bash
 
 #Mathematics Calculation
-
 y=10
-
 z=5
-
-
 let sum=$y+$z
 echo "Sum is $sum"
 

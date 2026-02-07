@@ -12,8 +12,10 @@ do
 done
 
 #using wildcard
+read -p "Enter a number: " max
 
-for i in {1..9}
+for i in $(seq 1 $max)
 do
-        echo "Number is $i"
+    echo "Number is $i"
 done
+

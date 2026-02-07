@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 a=10
 
 until [[ $a -eq 1 ]]

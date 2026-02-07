@@ -14,5 +14,5 @@ echo "New Variable is: $newVar"
 
 #To slice a string
 
-echo "After Slicing ${myVar:4:5}"
+echo "After Slicing: ${myVar:4:7}"
 
