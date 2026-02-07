@@ -2,7 +2,7 @@
 
 #Specify the file where the to-do list items will be stored.
 
-todo_file="Todo1.txt"
+todo_file="Todo.txt"
 
 function add_todo {
     echo "Enter the to-do item:"
