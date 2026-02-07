@@ -10,14 +10,13 @@ echo "All values of my arrays are ${Arrayname[*]}"
 
 #How to find the number of values in an array or lenght of the array
 
-
 echo "Lets find the length of the array: ${#Arrayname[*]}"
 
 #How to find the specific position of the array 
 
 echo "Lets find the specific position of the array: ${Arrayname[3]}"
 
-#How to find the specific range of the array
+#How to find the specific range of the array 2nto 5th position
 
 echo "Lets find the specific range of the array: ${Arrayname[*]:2:4}"
 
