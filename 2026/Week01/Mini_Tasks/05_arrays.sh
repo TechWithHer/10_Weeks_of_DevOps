@@ -16,15 +16,18 @@ echo "Lets find the length of the array: ${#Arrayname[*]}"
 
 echo "Lets find the specific position of the array: ${Arrayname[3]}"
 
-#How to find the specific range of the array 2nto 5th position
+#How to find the specific range of the array 2n to 5th position here
+#2nd is included and 5th is excluded
 
-echo "Lets find the specific range of the array: ${Arrayname[*]:2:4}"
+echo "Lets find the specific range of the array: ${Arrayname[*]:1:3}"
 
 #Adding new values to the array
 
 Arrayname+=(New 15 Sonal)
 
 echo "New array with added values : ${Arrayname[*]}"
+echo "Lets find the length of the array: ${#Arrayname[*]}"
+
 
 
 

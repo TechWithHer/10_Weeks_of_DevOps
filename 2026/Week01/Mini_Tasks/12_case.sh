@@ -13,6 +13,8 @@ case $OPTION in
 	B) 
 		echo "List of scripts in current directory are:" 
 		ls;;
+	*) 
+		echo "Invalid option selected";;
 esac
 
-echo "Please provide valid value"
+echo "Thanks for using our services!"
