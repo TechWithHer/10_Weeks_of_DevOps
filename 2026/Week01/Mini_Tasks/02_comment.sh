@@ -6,6 +6,12 @@ are
 here 
 multiline
 
+<<comments 
+sdffd 
+are 
+here 
+comments
+
 echo "comments are not entered"
 
 
