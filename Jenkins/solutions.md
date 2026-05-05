@@ -32,10 +32,10 @@ Project Used: https://github.com/TechWithHer/QuotesOps_Engine
 I created a Pipeline Job in Jenkins named:
 
 ```bash
-sample-app-cicd-pipeline
+QuotesOps-app-cicd-pipeline
 ```
 
-This job was connected to my sample web application repository.
+This job was connected to my QuotesOps_Engine application repository: https://github.com/TechWithHer/QuotesOps_Engine 
 
 Inside the repository, I created a `Jenkinsfile` to automate:
 
