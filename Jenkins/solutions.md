@@ -1,19 +1,5 @@
-Perfect — this should not read like a copied assignment brief.
-It should read like an **actual engineer’s implementation journal**:
 
 > **What I performed → what I observed → what I achieved → what can be improved next**
-
-That makes your `solution.md` look authentic, portfolio-worthy, and interview-usable.
-
-I’ll convert this entire Week 6 challenge into:
-
----
-
-# ✅ PROFESSIONAL `solution.md` STRUCTURE (Written as “What I Did”)
-
-You can directly use this in GitHub.
-
----
 
 # Week 6 Challenge – Jenkins CI/CD Basics & Advanced Real World Implementation
 
@@ -39,6 +25,7 @@ Throughout this challenge, I documented every configuration, command, issue, and
 # Task 1 — Implemented an End-to-End Jenkins Pipeline Job for CI/CD
 
 ---
+Project Used: https://github.com/TechWithHer/QuotesOps_Engine 
 
 ## ✅ What I Did
 
